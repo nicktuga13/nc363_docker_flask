@@ -20,15 +20,16 @@
     <div class="row">
          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
               <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <p>&nbsp &nbsp</p><img src="imgs/read-book.png" width="25" height="25" alt="Picture of logo"><p>&nbsp &nbsp</p>
+                <p>&nbsp &nbsp</p><img src="{{ url_for('static', filename='images/read-book.png') }}" width="25" height="25" alt="Picture of logo"><p>&nbsp &nbsp</p>
                 <span class="fs-4">Project1</span>
               </a>
 
               <ul class="nav nav-pills">
-                <li class="nav-item"><a href="page1.html" class="nav-link">Git</a></li>
-                <li class="nav-item"><a href="page2.html" class="nav-link">Docker</a></li>
-                <li class="nav-item"><a href="page3.html" class="nav-link">Python/Flask</a></li>
-                <li class="nav-item"><a href="page4.html" class="nav-link">Continuous Integration</a></li>
+                <li class="nav-item"><a href="{{ url_for('simple_pages.show', page="index")}}"class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="{{ url_for('simple_pages.show', page="page1")}}" class="nav-link">Git</a></li>
+                <li class="nav-item"><a href="{{ url_for('simple_pages.show', page="page2")}}" class="nav-link">Docker</a></li>
+                <li class="nav-item"><a href="{{ url_for('simple_pages.show', page="page3")}}" class="nav-link">Python/Flask</a></li>
+                  <li class="nav-item"><a href="{{ url_for('simple_pages.show', page="page4")}}" class="nav-link">Continuous Integration</a></li>
               </ul>
         </header>
     </div>
