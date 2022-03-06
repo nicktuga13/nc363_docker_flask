@@ -19,7 +19,7 @@
 <div class="container-fluid">
     <div class="row">
          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-              <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+              <a href="{{ url_for('simple_pages.show', page="index")}}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <p>&nbsp &nbsp</p><img src="{{ url_for('static', filename='images/read-book.png') }}" width="25" height="25" alt="Picture of logo"><p>&nbsp &nbsp</p>
                 <span class="fs-4">Project1</span>
               </a>
