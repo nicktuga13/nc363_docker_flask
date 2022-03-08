@@ -3,6 +3,7 @@
 
 def test_request_main_menu_links(client):
     """This makes the index page"""
+
     response = client.get("/")
     assert response.status_code == 200
     assert b'<a href="{{ url_for("simple_pages.show", page="about")}}" class="nav-link">About</a>' in response.data
