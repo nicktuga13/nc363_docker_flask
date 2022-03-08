@@ -39,7 +39,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: nicktuga113/nc363-prod
+          images: nicktuga13/nc363-prod
 
       - name: Build and push
         uses: docker/build-push-action@v2
