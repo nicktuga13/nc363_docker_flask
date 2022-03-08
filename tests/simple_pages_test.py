@@ -3,13 +3,14 @@
 
 def test_request_main_menu_links(client):
     """This makes the index page"""
+
     response = client.get("/")
     assert response.status_code == 200
-    assert b'<a href="{{ url_for("simple_pages.show", page="about")}}" class="nav-link">About</a>' in response.data
-    assert b'<a href="{{ url_for("simple_pages.show", page="page1")}}" class="nav-link">Git</a>' in response.data
-    assert b'<a href="{{ url_for("simple_pages.show", page="page2")}}" class="nav-link">Docker</a>' in response.data
-    assert b'<a href="{{ url_for("simple_pages.show", page="page3")}}" class="nav-link">Python/Flask</a>' in response.data
-    assert b'<a href="{{ url_for("simple_pages.show", page="page4")}}" class="nav-link">Continuous Integration</a>' in response.data
+    assert b'<a href="/about" class="nav-link">About</a>' in response.data
+    assert b'<a href="/page1" class="nav-link">Git</a>' in response.data
+    assert b'<a href="/page2" class="nav-link">Docker</a>' in response.data
+    assert b'<a href="/page3" class="nav-link">Python/Flask</a>' in response.data
+    assert b'<a href="/page4" class="nav-link">Continuous Integration</a>' in response.data
 
 
 def test_request_index(client):
