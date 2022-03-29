@@ -11,7 +11,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item">
-          <center><img src="{{ url_for('static', filename='images/dockercar3.png') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center>
+          <a href="{{ url_for('simple_pages.show', page="page5")}}"><center><img src="{{ url_for('static', filename='images/oop.png') }}" class="d-block w-50" height="425" alt="Picture of oop"></center></a>
         <div class="container">
             <!-- DOCKER -->
           <div class="carousel-caption text-start">
@@ -21,7 +21,7 @@
 
       <div class="carousel-item">
           <!-- GIT -->
-        <center><img src="{{ url_for('static', filename='images/gitcar2.png') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center>
+          <a href="{{ url_for('simple_pages.show', page="page6")}}"><center><img src="{{ url_for('static', filename='images/unit-test-design-part1-aaa_01.jpg') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center></a>
         <div class="container">
           <div class="carousel-caption">
           </div>
@@ -30,7 +30,7 @@
 
       <div class="carousel-item">
           <!-- FLASK/PYTHON -->
-          <center><img src="{{ url_for('static', filename='images/flaskcar2.png') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center>
+          <a href="{{ url_for('simple_pages.show', page="page9")}}"><center><img src="{{ url_for('static', filename='images/pylint.png') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center>
         <div class="container">
           <div class="carousel-caption">
           </div>
@@ -40,7 +40,7 @@
       <div class="carousel-item active">
           <!-- CICD -->
 
-          <center><img src="{{ url_for('static', filename='images/ci-cd.jpg') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center>
+          <a href="{{ url_for('simple_pages.show', page="page8")}}"><center><img src="{{ url_for('static', filename='images/solid.png') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center>
         <div class="container">
           <div class="carousel-caption text-end">
           </div>
@@ -216,6 +216,20 @@
         <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
         <p><a class="btn btn-secondary" href="page4.html">View details »</a></p>
       </div><!-- /.col-lg-4 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-2">
+        </div>
+            <div class="col-lg-8">
+                <h2>About Me:</h2>
+                <p>My name is Nicolas Cardozo, and I am a very ambitious student, currently pursuing degree in Computer Science.
+                    Motivated programmer, with engaging demeanor, known for working well in deadline-driven environments.
+                    Experienced in various languages such as Python, Java, C, PHP and others, while currently learning other useful
+                    languages such as JavaScript and assembly. Successful at managing teams, driving progress towards project milestones,
+                    quality assurance, and on-time delivery.</p>
+            </div>
+        <div class="col-lg-2">
+        </div>
     </div>
     </center>
 

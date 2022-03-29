@@ -1,27 +1,24 @@
 """ This is the Calculator Class"""
-from operations import *
+from calculator.calculation import Addition, Subtraction, Multiplication
 
 
 class Calculator:
     """ This is the default result property"""
-    result = 0
-
     @staticmethod
-    def add(value_1, value_2):
+    def add(tuple_list):
         """ This is the add method"""
-        return Addition.add(value_1 + value_2)
+        # Call the static method add to return the sum and set it to the calculator result property
+        calculations = Addition.create(tuple_list)
+        return calculations.get_result()
 
     @staticmethod
-    def subtract(value_1, value_2):
+    def subtract(tuple_list):
         """ This is the subtract method"""
-        return Subtract.subtract(value_1, value_2)
+        calculations = Subtraction.create(tuple_list)
+        return calculations.get_result()
 
     @staticmethod
-    def multiply(value_1, value_2):
+    def multiply(tuple_list):
         """ This is the subtract method"""
-        return Multiply.multiply(value_1, value_2)
-
-    @staticmethod
-    def get_result(self):
-        """ This is the get result method"""
-        return self.result
+        calculations = Multiplication.create(tuple_list)
+        return calculations.get_result()
