@@ -89,144 +89,15 @@
         <p><a class="btn btn-secondary" href="{{ url_for('simple_pages.show', page="page4")}}">View details »</a></p>
       </div><!-- /.col-lg-4 -->
     </div>
-    </center>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-  </body>
-
-
-
-{% endblock %}
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Home</title>
-
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <p>&nbsp &nbsp</p><img src="imgs/read-book.png" width="25" height="25" alt="Picture of logo"><p>&nbsp &nbsp</p>
-        <span class="fs-4">Project1</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="page1.html" class="nav-link">Git</a></li>
-        <li class="nav-item"><a href="page2.html" class="nav-link">Docker</a></li>
-        <li class="nav-item"><a href="page3.html" class="nav-link">Python/Flask</a></li>
-        <li class="nav-item"><a href="page4.html" class="nav-link">Continuous Integration</a></li>
-      </ul>
-    </header>
-  </head>
-  <body>
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" style="background-color: black" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-      <button type="button" style="background-color: black" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-        <button type="button" style="background-color: black" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-      <button type="button" style="background-color: black" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class="active" aria-current="true"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item">
-         <center><img src="imgs/dockercar3.png" class="d-block w-50" height="425" alt="Picture of the docker logo"></center>
-
-        <div class="container">
-            <!-- DOCKER -->
-          <div class="carousel-caption text-start">
-            <p><a class="btn btn-lg btn-primary" href="page2.html">View Page</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-          <!-- GIT -->
-        <center><img src="imgs/gitcar2.png" class="d-block w-50" height="425" alt="Picture of the git logo"></center>
-        <div class="container">
-          <div class="carousel-caption">
-            <p><a class="btn btn-lg btn-primary" href="page1.html">View Page</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-          <!-- FLASK/PYTHON -->
-        <center><img src="imgs/flaskcar2.png" class="d-block w-50" height="425" alt="Picture of the flask logo"></center>
-        <div class="container">
-          <div class="carousel-caption">
-            <p><a class="btn btn-lg btn-primary" href="page3.html">View Page</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item active">
-          <!-- CICD -->
-        <center><img src="imgs/ci-cd.jpg" class="d-block w-50" height="425" alt="Picture of the cicd logo"></center>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <p><a class="btn btn-lg btn-primary" href="page4.html">View Page</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-
-    <center>
-    <div class="row">
-      <div class="col-lg-3">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="imgs/github_logo.png" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
-
-        <h2>Git</h2>
-        <p>Learn more about Branches, Merge, Commit, Tags, Repositories.</p>
-        <p><a class="btn btn-secondary" href="page1.html">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-3">
-
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="imgs/dockerlogo.jpg" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
-
-        <h2>Docker</h2>
-        <p> About containers, images, link to a project repository on docker hub, docker commands and how to start a project and access containers</p>
-        <p><a class="btn btn-secondary" href="page2.html">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-3">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="imgs/flask%20logo.png" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
-
-        <h2>Python/Flask</h2>
-        <p>Testing with pytest and examples from code. How simple pages was created and tested. Project Link to Github and flask, flask Blueprint documentation, and flask testing with PyTest. Purpose of every file in the project.</p>
-        <p><a class="btn btn-secondary" href="page3.html">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="imgs/ci-cd.jpg" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
-
-        <h2>Continuous Integration and Deployment</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="page4.html">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div>
-    <div class="row">
+        <div class="row">
         <div class="col-lg-2">
         </div>
             <div class="col-lg-8">
                 <h2>About Me:</h2>
-                <p>My name is Nicolas Cardozo, and I am a very ambitious student, currently pursuing degree in Computer Science.
-                    Motivated programmer, with engaging demeanor, known for working well in deadline-driven environments.
-                    Experienced in various languages such as Python, Java, C, PHP and others, while currently learning other useful
-                    languages such as JavaScript and assembly. Successful at managing teams, driving progress towards project milestones,
-                    quality assurance, and on-time delivery.</p>
+                <p>My name is Nicolas Cardozo, and I am a very ambitious student, currently pursuing degree in Computer Science at NJIT.
+                    I am a Motivated programmer eager to learn more and constantly improve.</p>
+                <p><a class="btn btn-secondary" href="{{ url_for('simple_pages.show', page="About")}}">Learn More »</a></p>
             </div>
         <div class="col-lg-2">
         </div>
@@ -237,4 +108,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
-</html>
+
+{% endblock %}
