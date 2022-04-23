@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
+    <div>
+        {% if current_user.is_authenticated == false %}
+                <h2>Login</h2>
+                <form action="{{ url_for('auth.login') }}" method=post>
+                    <dl>
+                        {{ form.csrf_token }}
+                        {{ render_field(form.email) }}
+                        {{ render_field(form.password) }}
+                    </dl>
+                    <p><input type=submit value=Login>
+                </form>
+        {% endif %}
+    </div>
     Index Page
   <body>
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
