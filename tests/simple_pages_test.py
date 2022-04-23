@@ -30,6 +30,12 @@ def test_request_about(client):
     assert response.status_code == 200
 
 
+def test_request_welcome(client):
+    """This makes the about page"""
+    response = client.get("/welcome")
+    assert response.status_code == 200
+
+
 def test_request_page1(client):
     """This makes the index page"""
     response = client.get("/page1")
@@ -82,9 +88,3 @@ def test_request_page9(client):
     """This makes the index page"""
     response = client.get("/page9")
     assert response.status_code == 200
-
-
-def test_request_page_not_found(client):
-    """This makes the index page"""
-    response = client.get("/page10")
-    assert response.status_code == 404
