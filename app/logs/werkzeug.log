@@ -1343,3 +1343,4 @@
 2022-05-01 20:31:48,552 [INFO] werkzeug: 172.21.0.1 - - [01/May/2022 20:31:48] "[36mGET /static/images/read-book.png HTTP/1.1[0m" 304 -
 2022-05-01 20:31:48,564 [INFO] werkzeug: 172.21.0.1 - - [01/May/2022 20:31:48] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
 2022-05-01 20:31:48,796 [INFO] werkzeug: 172.21.0.1 - - [01/May/2022 20:31:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2022-05-01 20:58:31,062 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/user_test.py', reloading
