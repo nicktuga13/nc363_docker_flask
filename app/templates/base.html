@@ -33,16 +33,20 @@
                     <div class="navbar-nav mr-auto">
                         {% if current_user.is_authenticated %}
                             {{ render_nav_item('auth.dashboard','Dashboard' ) }}
+                            {{ render_nav_item('songs.songs_browse','My Songs' ) }}
+                            {{ render_nav_item('songs.songs_upload','Upload Songs' ) }}
+                            {{ render_nav_item('map.browse_locations','Browse Locations' ) }}
+                            {{ render_nav_item('map.location_upload','Upload Locations' ) }}
                             {% if current_user.is_admin %}
                                 {{ render_nav_item('auth.browse_users','User Management' ) }}
                             {% endif %}
 
                         {% else %}
-                            {{ render_nav_item('simple_pages.show', page='index') }}
+                            {{ render_nav_item('simple_pages.show', 'index') }}
                         {% endif %}
 
-                        {{ render_nav_item('simple_pages.show',page='about') }}
-                        {{ render_nav_item('simple_pages.show',page='welcome') }}
+                        {{ render_nav_item('simple_pages.show','about') }}
+                        {{ render_nav_item('simple_pages.show','welcome') }}
                     </div>
                 </div>
                 <div class="navbar-nav d-flex">
@@ -65,7 +69,7 @@
                 </div>
             </nav>
         </header>
-</div>
+    </div>
 
 <div class="container-fluid">
     <div class="row">
@@ -90,6 +94,7 @@
               </ul>
         </header>
     </div>
+</div>
     <div class="container">
         {% block content %}
         {% endblock %}
@@ -99,7 +104,6 @@
         Message: {{ mymessage }} {{ format_price(100) }}
     </footer>
 
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
